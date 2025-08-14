@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_웹 콘텐츠</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;    
+        }
+
+        li{
+            list-style: none;}
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+             /* 초기값 end */
+    
+        .section-01 {
+            background-color: rgb(216, 237, 255);
+            width: 1280px;
+            margin: 0 auto;
+        }
+        .section-01 .list{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .section-01 .list .item{
+            width: 300px;
+            background-color: rgba(255, 251, 236, 0.738);
+            border: 1px solid black;
+            color: rgb(24, 112, 100);
+            font-size: 18;
+            font-weight: 600;
+            
+        }
+
+        .section-01 h2{
+            font-size: 40px;
+            margin-bottom: 40px;
+            color:rgb(39, 21, 84)
+        }
+
+        /* .section 01 end */
+
+        .section-02{
+            background: url('img/해변\ 파도.jpg') center center / cover no-repeat;
+            padding: 100px 0;
+        }
+
+        .section-02 .inner {
+            width: 1280px;
+            margin: 0 auto;
+            
+           
+            
+        }
+
+        .section-02 .inner h2{
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .section-02 .inner .list{
+            display: flex;
+            justify-content: space-between;
+           
+            }
+
+
+        .section-02 .inner .list .item{
+            color: rgb(0, 0, 0);
+            width: 400px;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+            padding: 20px ;
+
+        }
+        /* section-02 end */
+        .section-03{
+            background-color:rgb(216, 237, 255);
+            padding: 100px 0;
+            
+        }
+
+        .section-03 .inner{
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .section-03 .inner h2{
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .section-03 .inner .list{
+            display: flex;
+            justify-content: space-between;
+        }
+        .section-03 .inner .list .item{
+            width: 300px;
+            
+        }
+        .section-03 .inner .list .item img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+
+    </style>
+<body>
+    <div class="section-01">
+        <h2>첫번째 섹션</h2><!-- h1은 웹사이트 중 단 한번만 사용가능 -->
+        <div class="list">
+            <div class="item">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem incidunt aliquid molestiae accusamus officia dolore consequuntur repudiandae quos minima sint magni explicabo quod id excepturi maxime, eaque, ullam placeat voluptate?</p>
+            </div><!-- .item end -->
+
+            <div class="item">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem incidunt aliquid molestiae accusamus officia dolore consequuntur repudiandae quos minima sint magni explicabo quod id excepturi maxime, eaque, ullam placeat voluptate?</p>
+            </div><!-- .item end -->
+
+            <div class="item">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem incidunt aliquid molestiae accusamus officia dolore consequuntur repudiandae quos minima sint magni explicabo quod id excepturi maxime, eaque, ullam placeat voluptate?</p>
+            </div><!-- .item end -->
+
+            <div class="item">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem incidunt aliquid molestiae accusamus officia dolore consequuntur repudiandae quos minima sint magni explicabo quod id excepturi maxime, eaque, ullam placeat voluptate?</p>
+            </div><!-- .item end -->
+        </div><!-- .list end -->
+    </div><!-- .section-01 end -->
+
+
+    <div class="section-02">
+        <div class="inner">
+            <h2>두번째 섹션</h2>
+            <div class="list">
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, magnam sit! Quidem suscipit aspernatur assumenda aperiam nobis, quisquam exercitationem incidunt error. Beatae, alias excepturi repellat doloremque soluta architecto mollitia quae.</p>
+                </div><!-- .item end -->
+
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, magnam sit! Quidem suscipit aspernatur assumenda aperiam nobis, quisquam exercitationem incidunt error. Beatae, alias excepturi repellat doloremque soluta architecto mollitia quae.</p>
+                </div><!-- .item end -->
+
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, magnam sit! Quidem suscipit aspernatur assumenda aperiam nobis, quisquam exercitationem incidunt error. Beatae, alias excepturi repellat doloremque soluta architecto mollitia quae.</p>
+                </div><!-- .item end -->
+            </div><!-- .list end -->
+        </div><!-- .inner end -->
+    </div><!-- .section-02 end -->
+
+
+    <div class="section-03">
+        <div class="inner">
+            <h2>세번째 섹션</h2>
+            <div class="list">
+                <div class="item">
+                    <img src="img/가벼운 비.jpg" alt="">
+                    <div class="text">
+                        <h3>아이템 제목</h3>
+                        <p>아이템에 대한 설명 내용들</p>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+
+                <div class="item">
+                    <img src="img/벽난로.jpg" alt="">
+                    <div class="text">
+                        <h3>아이템 제목</h3>
+                        <p>아이템에 대한 설명 내용들</p>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+
+                <div class="item">
+                    <img src="img/강가.jpg" alt="">
+                    <div class="text">
+                        <h3>아이템 제목</h3>
+                        <p>아이템에 대한 설명 내용들</p>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+
+                <div class="item">
+                    <img src="img/보통 비.jpg" alt="">
+                    <div class="text">
+                        <h3>아이템 제목</h3>
+                        <p>아이템에 대한 설명 내용들</p>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+
+            </div><!-- .list end -->
+        </div><!-- .inner end -->
+    </div><!-- .section-03 end -->
+    
+</body>
+</html>

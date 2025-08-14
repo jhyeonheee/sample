@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_수직,수평 정렬</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* .all end */
+    li{
+list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .box{
+        width: 338px;
+        height: 108px;
+        /* 그림자: x축 y축 흐림 색상 */
+        box-shadow:5px 5px 20px rgba(0, 0, 0, 0.3) ;    
+        margin: 100px auto;  
+        border-radius: 8px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .box img{
+        width: 71px;  
+    }
+    /* .box end */
+
+    .list{
+        width: 338px;
+        height: 108px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3) ;
+        margin: 100px auto;
+        padding: 0 20px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    /* .list end */
+    }
+
+    .list .info{
+        display: flex;
+        align-items: center;
+    }
+
+    .list .info img{
+        width: 71px;
+    }
+
+    .info p{
+       margin: 40px;
+    }
+    /* .info end */
+
+    .list2{
+        width: 338px;
+        height: 108px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+        margin: 100px auto;
+        padding: 0 20px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .list2 .info{
+        display: flex;
+        align-items: center;
+    }
+    .list2 .info img{
+        width: 71px;
+    }
+    .text{
+       margin: 20px;
+    }
+    .text span{
+        font-size: 14px;
+        display: block;
+        font-weight: 300;
+        color: #6c6c6c;
+    }    
+    .text strong{
+        margin-top: 9px;
+        line-height: 1.2;
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="all">
+            <div class="box">
+                <img src="img/image-4.jpg" alt="">
+                <p>이미지 제목 작성</p>
+                <a href="#">보기</a>
+            </div><!-- .box end -->
+        
+        <div class="list">
+            <div class="info">
+                <img src="img/image-3.jpg" alt="">
+                <p>이미지 제목 작성</p>
+            </div><!-- .info end -->
+            <a href="#">보기</a>
+        </div><!-- .list end -->
+
+        <div class="list2">
+            <div class="info">
+                <img src="img/image-1.jpg" alt="">
+                <div class="text">
+                    <span>소스내추럴</span>
+                    <strong>메가 스트렝스 베타<br />
+                    시토스테롤</strong>
+                </div><!-- .text end -->
+            </div><!-- .info end -->
+            <a href="#">보기</a>
+        </div><!-- .list2 end -->
+    </div><!-- .all end -->
+</body>
+</html>
